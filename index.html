@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1311">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Maverick">
+<title>Maverick Expeditions — Travel agency in Tiruppur for South India tours</title>
+<meta name="description" content="Maverick Expeditions — travel agency in Tiruppur for South India tours. Student, family, corporate, honeymoon, pilgrimage, international and custom tours.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/hero-munnar-m.webp" media="(max-width: 1100px)">
+<link rel="preload" as="image" href="img/hero-munnar.webp" media="(min-width: 1101px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<div id="loader" role="status" aria-live="polite">
+  <img src="img/logo.png" alt="Maverick Expeditions" class="w-36 opacity-95" width="768" height="512">
+  <div class="bar"><i></i></div>
+  <span class="sr-only">Loading</span>
+</div>
+
+<!-- ========== HEADER ========== -->
+<header class="nav" id="nav">
+  <div class="wrap flex items-center justify-between gap-3 py-2.5 lg:py-4">
+    <a href="#top" class="press flex-none" aria-label="Maverick Expeditions home"><img src="img/logo.png" alt="Maverick Expeditions" class="h-11 w-auto lg:h-[52px]" width="768" height="512"></a>
+    <nav class="glass hidden gap-0.5 rounded-full p-1 lg:flex" aria-label="Main">
+      <a href="#destinations" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">Destinations</a>
+      <a href="#tours" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">Tours</a>
+      <a href="#why" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">Why Maverick</a>
+      <a href="#how" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">How it works</a>
+      <a href="#policies" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">FAQ</a>
+      <a href="#plan" class="rounded-full px-4 py-2.5 text-[14px] font-semibold text-white no-underline transition-colors hover:bg-white/10">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2.5">
+      <a class="hidden text-[14px] font-semibold text-white no-underline xl:inline" href="tel:+918110849375">+91 81108 49375</a>
+      <a class="btn btn-accent hidden min-h-[44px] px-5 sm:inline-flex" href="#plan">Plan my trip
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="burger glass press relative h-[46px] w-[46px] rounded-full lg:hidden" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu sheet -->
+<div class="sheet" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <nav class="flex flex-col" aria-label="Mobile">
+    <a href="#destinations" class="sl press border-b border-white/10 py-4 font-display text-[34px] font-extrabold tracking-tight text-white no-underline" style="transition-delay:40ms">Destinations</a>
+    <a href="#tours" class="sl press border-b border-white/10 py-4 font-display text-[34px] font-extrabold tracking-tight text-white no-underline" style="transition-delay:80ms">Tours</a>
+    <a href="#why" class="sl press border-b border-white/10 py-4 font-display text-[34px] font-extrabold tracking-tight text-white no-underline" style="transition-delay:120ms">Why Maverick</a>
+    <a href="#how" class="sl press border-b border-white/10 py-4 font-display text-[34px] font-extrabold tracking-tight text-white no-underline" style="transition-delay:160ms">How it works</a>
+    <a href="#policies" class="sl press border-b border-white/10 py-4 font-display text-[34px] font-extrabold tracking-tight text-white no-underline" style="transition-delay:200ms">FAQ &amp; policies</a>
+  </nav>
+  <div class="sl mt-auto flex flex-col gap-3 pt-8" style="transition-delay:260ms">
+    <a href="#plan" class="btn btn-accent w-full text-[16px]">Plan my trip</a>
+    <div class="grid grid-cols-2 gap-3">
+      <a href="tel:+918110849375" class="btn w-full bg-white/10 text-white">Call</a>
+      <a href="https://wa.me/918110849375" target="_blank" rel="noopener noreferrer" class="btn w-full bg-wa text-white">WhatsApp</a>
+    </div>
+    <p class="text-center text-[13px] text-muted-f">+91 81108 49375 · +91 73395 76886</p>
+  </div>
+</div>
+
+<main>
+<!-- ========== SCROLL FLY-THROUGH ========== -->
+<section id="fly" aria-label="Scroll through Munnar, the backwaters and Manali">
+  <div id="stage">
+    <div class="scenes" id="scenes" aria-hidden="true">
+      <div class="scene" data-i="0"><img src="img/hero-munnar.webp" srcset="img/hero-munnar-m.webp 1200w, img/hero-munnar.webp 2400w" sizes="110vw" alt="" fetchpriority="high" decoding="async"></div>
+      <div class="scene" data-i="1"><img src="img/hero-backwaters.webp" srcset="img/hero-backwaters-m.webp 1200w, img/hero-backwaters.webp 2400w" sizes="110vw" alt="" decoding="async"></div>
+      <div class="scene" data-i="2"><img src="img/hero-solang.webp" srcset="img/hero-solang-m.webp 1200w, img/hero-solang.webp 2400w" sizes="110vw" alt="" decoding="async"></div>
+      <canvas class="cloud" id="cloudA"></canvas>
+      <canvas class="cloud" id="cloudB"></canvas>
+    </div>
+    <div class="vignette"></div>
+    <div class="absolute left-10 z-40 hidden gap-4 text-[12px] font-semibold uppercase tracking-[.18em] text-white/80 md:flex" style="top:calc(env(safe-area-inset-top) + 96px)" aria-hidden="true"><span id="locName">Munnar, Kerala</span><span>≈ <b class="font-bold text-white" id="altv">1,532</b> m</span></div>
+    <div class="progress absolute right-7 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-2.5 md:flex" aria-hidden="true"><i><b id="p1"></b></i><i><b id="p2"></b></i><i><b id="p3"></b></i></div>
+
+    <div class="chapter c1" id="top">
+      <div class="wrap">
+        <p class="hero-pill eyebrow"><svg class="h-4 w-4 flex-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Travel agency in Tiruppur · South India tours</p>
+        <h1>Forge your<br>own path.</h1>
+        <p class="mt-5 max-w-[600px] text-[17px] leading-relaxed text-white/90 [text-shadow:0_2px_20px_rgba(0,0,0,.5)] sm:mt-6 sm:text-[19px]">Trips planned to go further — to places that stay with you. For students, families, colleagues and newlyweds.</p>
+      </div>
+    </div>
+
+    <div class="chapter c2">
+      <div class="wrap">
+        <p class="hero-pill eyebrow text-accent">2 years · Tiruppur &amp; Coimbatore</p>
+        <h2>Hill stations.<br>Tea country.<br><em>Backwaters.</em> Forts.</h2>
+      </div>
+    </div>
+
+    <div class="chapter c3">
+      <div class="wrap flex flex-col gap-5 sm:gap-7">
+        <h2>Where are we<br>going <em>next?</em></h2>
+        <form class="finder live on-dark flex max-w-[1100px] flex-col gap-3 rounded-3xl p-3 sm:gap-3.5 sm:rounded-[28px] sm:p-[18px]" id="finder" aria-label="Find your trip">
+          <div class="snaprow -mx-3 flex gap-2 overflow-x-auto px-3 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Trip type" id="chips"></div>
+          <div class="grid grid-cols-2 items-end gap-2.5 lg:grid-cols-4">
+            <label class="field col-span-2 sm:col-span-1">Where to?
+              <select id="fDest">
+                <option>Anywhere — suggest a place</option>
+                <optgroup label="India"><option>Ooty</option><option>Munnar</option><option>Alleppey</option><option>Mysore</option><option>Coorg</option><option>Kodaikanal</option><option>Goa</option><option>Jaipur</option><option>Kullu Manali</option><option>Andaman Islands</option></optgroup>
+                <optgroup label="International"><option>Sri Lanka</option><option>Malaysia</option><option>Thailand</option><option>Singapore</option></optgroup>
+              </select>
+            </label>
+            <label class="field">When?<input type="month" id="fWhen"></label>
+            <label class="field">Group size
+              <select id="fSize"><option>2 travellers</option><option>3–6 travellers</option><option>7–20 travellers</option><option>20–50 travellers</option><option>50+ (school / company)</option></select>
+            </label>
+            <button class="btn btn-accent col-span-2 h-[52px] rounded-[14px] sm:col-span-1" type="submit">Get a free itinerary
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="scrollcue" id="cue" aria-hidden="true"><span></span>Scroll to explore</div>
+  </div>
+</section>
+
+<!-- ========== PROOF ========== -->
+<section class="border-t border-white/10 bg-ink text-white" aria-label="Highlights">
+  <div class="wrap grid grid-cols-2 gap-x-4 gap-y-6 py-8 lg:grid-cols-4 lg:py-8">
+    <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3.5"><strong class="font-display text-[36px] font-extrabold tracking-tight text-accent sm:text-[42px]">2</strong><span class="text-[14px] leading-snug text-muted-d sm:text-[15px]">years running groups out of Tiruppur</span></div>
+    <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3.5"><strong class="font-display text-[36px] font-extrabold tracking-tight text-accent sm:text-[42px]">₹0</strong><span class="text-[14px] leading-snug text-muted-d sm:text-[15px]">hidden extras — itemised quotes</span></div>
+    <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3.5"><strong class="font-display text-[36px] font-extrabold tracking-tight text-accent sm:text-[42px]">24×7</strong><span class="text-[14px] leading-snug text-muted-d sm:text-[15px]">one number that reaches a real person</span></div>
+    <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3.5"><strong class="font-display text-[36px] font-extrabold tracking-tight text-accent sm:text-[42px]">1</strong><span class="text-[14px] leading-snug text-muted-d sm:text-[15px]">coordinator travelling with every group</span></div>
+  </div>
+</section>
+
+<!-- ========== DESTINATIONS ========== -->
+<section id="destinations" class="sec bg-paper text-ink">
+  <div class="wrap">
+    <div class="reveal mb-8 flex flex-wrap items-end justify-between gap-5 sm:mb-12">
+      <div class="flex max-w-[780px] flex-col gap-3.5"><p class="eyebrow text-muted">Destinations</p><h2 class="sec-title">Hill stations, backwaters, forts and beaches.</h2></div>
+      <a class="btn btn-ghost hidden md:inline-flex" href="#plan">Ask about a destination</a>
+    </div>
+    <p class="mb-3 flex items-center gap-2 text-[13px] font-semibold text-muted md:hidden">Swipe to explore <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+    <div class="snaprow -mx-5 flex gap-4 overflow-x-auto px-5 pb-4 pt-1 [perspective:1200px] sm:-mx-8 sm:px-8 md:mx-0 md:grid md:grid-cols-2 md:gap-5 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-4" id="dgrid"></div>
+
+    <div class="reveal mb-8 mt-20 flex flex-wrap items-end justify-between gap-5 sm:mb-12 sm:mt-24">
+      <div class="flex max-w-[780px] flex-col gap-3.5"><p class="eyebrow text-muted">Islands &amp; abroad</p><h2 class="sec-title">Beyond the mainland.</h2></div>
+      <p class="max-w-[380px] text-[16px] leading-relaxed text-muted">Island hopping in the Andamans, or a short flight to Sri Lanka, Malaysia, Thailand and Singapore — planned with the same care.</p>
+    </div>
+    <div class="snaprow -mx-5 flex gap-4 overflow-x-auto px-5 pb-4 pt-1 [perspective:1200px] sm:-mx-8 sm:px-8 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-5" id="igrid"></div>
+  </div>
+</section>
+
+<!-- ========== TOURS (3D ring) ========== -->
+<section id="tours" class="sec overflow-hidden bg-ink text-white">
+  <div class="wrap">
+    <div class="reveal mb-4 flex flex-wrap items-end justify-between gap-5 sm:mb-6">
+      <div class="flex max-w-[780px] flex-col gap-3.5"><p class="eyebrow text-accent">Tours for every group</p><h2 class="sec-title">Who's travelling? We've planned it before.</h2></div>
+      <p class="max-w-[360px] text-[16px] leading-relaxed text-muted-d"><span class="md:hidden">Swipe the ring</span><span class="hidden md:inline">Drag the ring, or use the arrows,</span> to explore all eight ways to travel with us.</p>
+    </div>
+    <div class="ringstage" id="ringstage" aria-roledescription="carousel" aria-label="Tour types">
+      <div class="floor"></div>
+      <div class="ring" id="ring"></div>
+    </div>
+    <div class="-mt-4 flex flex-wrap items-center justify-between gap-5">
+      <div class="min-h-[96px] max-w-[620px]" aria-live="polite"><h3 class="text-[28px] font-extrabold sm:text-[34px]" id="ringTitle">Student tours</h3><p class="mt-2.5 text-[16px] leading-relaxed text-muted-d sm:text-[17px]" id="ringBody"></p></div>
+      <div class="flex gap-2.5">
+        <button class="press flex h-14 w-14 items-center justify-center rounded-full border-[1.5px] border-white/35 text-white hover:bg-white/10" id="prev" aria-label="Previous tour type"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button class="press flex h-14 w-14 items-center justify-center rounded-full border-[1.5px] border-white/35 text-white hover:bg-white/10" id="next" aria-label="Next tour type"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY ========== -->
+<section id="why" class="sec bg-ink pt-6 text-white sm:pt-10">
+  <div class="wrap flex flex-col items-center gap-12 lg:flex-row lg:gap-[72px]">
+    <div class="relative h-[360px] w-full [perspective:1400px] sm:h-[520px] lg:h-[640px] lg:flex-1" id="stackwrap" aria-hidden="true">
+      <div class="stack" id="stack">
+        <figure class="f1"><img src="img/toytrain.webp" alt="" loading="lazy"></figure>
+        <figure class="f2"><img src="img/madurai.webp" alt="" loading="lazy"></figure>
+        <figure class="f3"><img src="img/thekkady.webp" alt="" loading="lazy"></figure>
+        <div class="badge"><b class="block font-display text-[34px] font-extrabold leading-none sm:text-[44px]">2 yrs</b><span class="text-[13px] font-bold sm:text-[14px]">running groups from Tiruppur</span></div>
+      </div>
+    </div>
+    <div class="w-full lg:flex-1">
+      <p class="eyebrow reveal mb-5 text-accent">Why Maverick</p>
+      <p class="reveal mb-10 font-display text-[26px] font-bold leading-[1.15] tracking-tight sm:text-[34px] lg:text-[44px]">"More than a trip — every itinerary planned to inspire, connect, and reveal India in ways a guidebook never will."</p>
+      <ol class="m-0 list-none p-0" id="reasons"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW ========== -->
+<section id="how" class="sec bg-paper text-ink">
+  <div class="wrap">
+    <div class="reveal mb-8 flex max-w-[780px] flex-col gap-3.5 sm:mb-12"><p class="eyebrow text-muted">How it works</p><h2 class="sec-title">From enquiry to drop-off, in three steps.</h2></div>
+    <div class="grid gap-4 [perspective:1200px] sm:gap-5 md:grid-cols-3">
+      <div class="reveal flex flex-col gap-3 rounded-[26px] bg-white p-7 transition duration-500 ease-spring hover:-translate-y-2 hover:shadow-[0_40px_60px_rgba(11,19,17,.15)] sm:p-8"><span class="font-display text-[56px] font-extrabold leading-none tracking-tight text-[#C3CCC7] sm:text-[72px]">01</span><h3 class="text-[26px] font-bold sm:text-[28px]">Tell us the basics</h3><p class="text-[16px] leading-relaxed text-muted">Dates, budget, group size and the kind of trip — by form, call or WhatsApp.</p></div>
+      <div class="reveal flex flex-col gap-3 rounded-[26px] bg-white p-7 transition duration-500 ease-spring hover:-translate-y-2 hover:shadow-[0_40px_60px_rgba(11,19,17,.15)] sm:p-8"><span class="font-display text-[56px] font-extrabold leading-none tracking-tight text-[#C3CCC7] sm:text-[72px]">02</span><h3 class="text-[26px] font-bold sm:text-[28px]">Get a free itinerary</h3><p class="text-[16px] leading-relaxed text-muted">A day-by-day plan with an itemised quote. We'll match any comparable written offer.</p></div>
+      <div class="reveal flex flex-col gap-3 rounded-[26px] bg-ink p-7 text-white transition duration-500 ease-spring hover:-translate-y-2 hover:shadow-[0_40px_60px_rgba(11,19,17,.25)] sm:p-8"><span class="font-display text-[56px] font-extrabold leading-none tracking-tight text-accent sm:text-[72px]">03</span><h3 class="text-[26px] font-bold sm:text-[28px]">Travel — we handle the rest</h3><p class="text-[16px] leading-relaxed text-muted-d">Verified drivers, tracked vehicles, inspected hotels and a coordinator on the road with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== POLICIES & FAQ ========== -->
+<section id="policies" class="sec bg-paper pt-4 text-ink sm:pt-8">
+  <div class="wrap flex flex-col">
+    <div class="reveal mb-8 flex flex-wrap items-end justify-between gap-5 sm:mb-10">
+      <div class="flex max-w-[780px] flex-col gap-3.5"><p class="eyebrow text-muted">Policies &amp; FAQ</p><h2 class="sec-title">Clear terms, before you travel.</h2></div>
+      <p class="max-w-[380px] text-[16px] leading-relaxed text-muted">Still unsure about something? Call +91 81108 49375 or WhatsApp us — a real person answers.</p>
+    </div>
+
+    <div class="snaprow -mx-5 mb-8 overflow-x-auto px-5 sm:mx-0 sm:mb-10 sm:px-0">
+      <div class="flex w-max gap-1.5 rounded-full bg-mist p-1.5" role="tablist" aria-label="Policies and FAQ">
+        <button class="tab" role="tab" id="tab-faq" aria-controls="panel-faq" aria-selected="true" data-tab="faq">FAQ</button>
+        <button class="tab" role="tab" id="tab-terms" aria-controls="panel-terms" aria-selected="false" tabindex="-1" data-tab="terms">Cancellation &amp; payments</button>
+        <button class="tab" role="tab" id="tab-privacy" aria-controls="panel-privacy" aria-selected="false" tabindex="-1" data-tab="privacy">Privacy policy</button>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-faq" aria-labelledby="tab-faq">
+      <div class="faq flex max-w-[980px] flex-col gap-3">
+        <details open><summary>Is my trip booked once I receive the itinerary?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">No. The itinerary is a proposal, and no bookings are made until you confirm it. Everything in it is subject to availability, so we recommend confirming early to avoid last-minute hassles. Your booking is confirmed with the 30% advance payment.</div></details>
+        <details><summary>How do payments work?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">In three parts:<ul><li><b>30% advance</b> when you sign the contract or confirm the booking.</li><li><b>50%</b> ten days before the departure date.</li><li><b>The final 20%</b> on day 1 of the tour, when you reach the resort.</li></ul></div></details>
+        <details><summary>What happens if I cancel?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">It depends on how close to departure you cancel:<ul><li><b>30 days or more before:</b> a 10% administrative deduction on the total trip cost.</li><li><b>15–29 days before:</b> a 30% retention fee.</li><li><b>0–14 days before:</b> a 100% retention fee, because of resort block-booking rules.</li></ul></div></details>
+        <details><summary>What is not included in the trip cost?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Anything not mentioned in your itinerary — for example personal expenses, food beyond what's listed, early check-in or late checkout, and camera or video permits at sights. Some charges are paid directly at the destination, such as entry tickets, vehicle entry or green tax at hill stations and sanctuaries, and optional activities like boating, jeep safaris and paragliding. Your itinerary lists exactly what is included and excluded.</div></details>
+        <details><summary>What if the hotel in my itinerary isn't available?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Hotels are subject to availability. If the one proposed is not available, we provide similar rooms.</div></details>
+        <details><summary>Can sightseeing days and timings change?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Yes. The itinerary is a guideline for the tour, so the days and timings of sightseeing may change on the ground.</div></details>
+        <details><summary>Do you plan trips outside South India?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Yes — Goa, Jaipur and Kullu Manali within India, the Andaman Islands, and international trips to Sri Lanka, Malaysia, Thailand and Singapore. Tell us your dates, budget and group size and we'll send an itinerary.</div></details>
+        <details><summary>How do you use my personal details?<span class="pm" aria-hidden="true"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Only to plan and run your trip — we share them with the hotels, drivers, guides and permit authorities involved, and we never sell them. <a href="#policies" data-tab="privacy" class="font-bold text-ink">Read the full privacy policy</a>.</div></details>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-terms" aria-labelledby="tab-terms" hidden>
+      <div class="grid gap-4 sm:gap-5 lg:grid-cols-2 xl:grid-cols-3">
+        <div class="tcard lg:col-span-2 xl:col-span-3">
+          <h3>Payment terms</h3>
+          <div class="grid gap-1.5 sm:grid-cols-[30fr_50fr_20fr]">
+            <div class="flex min-h-[120px] flex-col justify-between gap-2.5 rounded-2xl bg-accent p-4 text-ink sm:min-h-[150px]"><b class="font-display text-[40px] font-extrabold leading-none tracking-tight">30%</b><span class="text-[14px] font-semibold leading-snug">Advance — on contract signing or booking confirmation</span></div>
+            <div class="flex min-h-[120px] flex-col justify-between gap-2.5 rounded-2xl bg-ink p-4 text-white sm:min-h-[150px]"><b class="font-display text-[40px] font-extrabold leading-none tracking-tight">50%</b><span class="text-[14px] font-semibold leading-snug">Intermediate — 10 days before the departure date</span></div>
+            <div class="flex min-h-[120px] flex-col justify-between gap-2.5 rounded-2xl bg-[#DCE4E0] p-4 text-ink sm:min-h-[150px]"><b class="font-display text-[40px] font-extrabold leading-none tracking-tight">20%</b><span class="text-[14px] font-semibold leading-snug">Final balance — on day 1, on reaching the resort</span></div>
+          </div>
+        </div>
+        <div class="tcard">
+          <h3>Cancellation charges</h3>
+          <div class="flex flex-col gap-2.5">
+            <div class="tier"><span>30+ days before departure</span><b>10%</b></div>
+            <div class="tier"><span>15–29 days before</span><b>30%</b></div>
+            <div class="tier bg-[#FBE9E4]"><span>0–14 days before</span><b class="text-danger">100%</b></div>
+          </div>
+          <p class="text-[14px] leading-normal text-muted">30+ days: administrative deduction on the total trip cost. 15–29 and 0–14 days: retention fee. The 0–14 day charge is due to resort block-booking rules.</p>
+        </div>
+        <div class="tcard">
+          <h3>Reservation policy</h3>
+          <ul>
+            <li>Hotels are subject to availability. If not available, similar rooms will be provided.</li>
+            <li>No bookings are made from the itinerary — it is a proposal, subject to availability of services.</li>
+            <li>The itinerary is a guideline for the tour, so the days and timings of sightseeing may change.</li>
+            <li>For any clarification, feel free to call us.</li>
+          </ul>
+        </div>
+        <div class="tcard">
+          <h3>Trip cost excludes</h3>
+          <ul>
+            <li>Anything not mentioned in the itinerary.</li>
+            <li>Personal expenses.</li>
+            <li>Early check-in and late checkout.</li>
+            <li>Permits for cameras and videos at sights.</li>
+            <li>Other food expenses.</li>
+          </ul>
+        </div>
+        <div class="tcard">
+          <h3>Paid at the destination</h3>
+          <ul>
+            <li>Entry tickets and camera fees.</li>
+            <li>Vehicle entry or green tax at hill stations and sanctuaries.</li>
+            <li>Optional activities such as boating, jeep safaris and paragliding.</li>
+          </ul>
+          <p class="text-[14px] leading-normal text-muted">Your itinerary tells you what is included and excluded.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" hidden>
+      <article class="flex max-w-[980px] flex-col gap-6 rounded-[26px] bg-white p-6 text-[16px] leading-relaxed text-muted sm:p-11">
+        <p>Maverick Expeditions ("we", "us") respects your privacy. This policy explains what information we collect when you use www.maverickexpeditions.in or book a tour with us.</p>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">Information we collect</h3><p>Your name, phone number, email address, group size, travel dates and preferences, and, where needed for bookings, ID details of travellers (for example for hotels, permits and school or college tours).</p></div>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">How we use it</h3><p>To prepare itineraries and quotes, confirm bookings with hotels, transport providers and attractions, send booking updates, and provide support before, during and after your trip.</p></div>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">Sharing</h3><p>We share your details only with the service providers needed to run your trip (hotels, drivers, guides, permit authorities). We do not sell your personal information.</p></div>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">Security</h3><p>We take reasonable steps to protect your information, but no online method of transmission is completely secure.</p></div>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">Your choices</h3><p>You can ask us to correct or delete your information, or to stop sending you offers, by writing to maverickexpeditions@gmail.com.</p></div>
+        <div><h3 class="mb-2 text-[21px] font-bold text-ink">Payments at the destination</h3><p>Some charges are not part of the quotation and are paid directly by guests at the destination. Examples are entry tickets, camera fees, vehicle entry or green tax at hill stations and sanctuaries, and optional activities such as boating, jeep safaris and paragliding. Your itinerary will tell you what is included and excluded.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PLAN YOUR TRIP ========== -->
+<section id="plan" class="bg-paper pb-24 text-ink sm:pb-32">
+  <div class="wrap">
+    <div class="reveal relative flex flex-col gap-8 overflow-hidden rounded-[28px] bg-accent p-5 sm:rounded-[40px] sm:p-10 lg:flex-row lg:gap-12 lg:p-[60px]">
+      <svg class="pointer-events-none absolute -bottom-10 -right-16 w-[520px] opacity-[.14]" viewBox="0 0 520 300" aria-hidden="true"><path d="M0 300 L120 120 L170 180 L270 40 L360 170 L410 120 L520 300Z" fill="#0B1311"/></svg>
+      <div class="relative z-[1] flex flex-col gap-5 lg:flex-1">
+        <h2 class="font-display text-[44px] font-extrabold leading-[.92] tracking-[-.04em] sm:text-[64px] lg:text-[84px]">Plan your trip.</h2>
+        <p class="max-w-[440px] text-[17px] leading-relaxed sm:text-[18px]">Share a few details and we'll send a free, itemised itinerary.</p>
+        <div class="flex flex-col gap-3 text-[16px] font-semibold sm:text-[17px]">
+          <a class="btn btn-dark self-start" href="https://wa.me/918110849375" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            Chat on WhatsApp</a>
+          <span>+91 81108 49375 · +91 73395 76886</span>
+          <span class="break-all">maverickexpeditions@gmail.com</span>
+          <span class="font-medium">Arulpuram, Tiruppur, Tamil Nadu 641605</span>
+        </div>
+      </div>
+      <form id="enquiry" class="relative z-[1] grid grid-cols-1 gap-4 rounded-[22px] bg-white p-5 shadow-[0_40px_80px_rgba(11,19,17,.18)] sm:grid-cols-2 sm:rounded-[26px] sm:p-8 lg:flex-[1.2]" aria-label="Enquiry form" novalidate>
+        <label class="lf">Your name *<input id="eName" type="text" placeholder="Full name" autocomplete="name" autocapitalize="words" maxlength="60" spellcheck="false" enterkeyhint="next" required><small class="err" id="eNameErr"></small></label>
+        <label class="lf">Phone / WhatsApp *<input id="ePhone" type="tel" placeholder="98765 43210" autocomplete="tel" inputmode="tel" maxlength="18" enterkeyhint="next" required><small class="err" id="ePhoneErr"></small></label>
+        <label class="lf">Destination<select id="eDest">
+          <option>Not decided — suggest one</option>
+          <optgroup label="India"><option>Ooty</option><option>Munnar</option><option>Alleppey</option><option>Mysore</option><option>Coorg</option><option>Kodaikanal</option><option>Goa</option><option>Jaipur</option><option>Kullu Manali</option><option>Andaman Islands</option></optgroup>
+          <optgroup label="International"><option>Sri Lanka</option><option>Malaysia</option><option>Thailand</option><option>Singapore</option></optgroup>
+        </select></label>
+        <label class="lf">Trip type<select id="eType"><option>Family</option><option>Students</option><option>Corporate</option><option>Honeymoon</option><option>Pilgrimage</option><option>Industrial visit</option><option>Weekend trip</option><option>Custom</option></select></label>
+        <label class="lf">Travel date<input id="eDate" type="date"><small class="err" id="eDateErr"></small></label>
+        <label class="lf">Travellers<input id="eCount" type="number" min="1" max="500" step="1" inputmode="numeric" placeholder="e.g. 4"><small class="err" id="eCountErr"></small></label>
+        <label class="lf sm:col-span-2"><span>Anything else? <span class="font-medium">(days, budget, hotel type…)</span></span><textarea id="eMsg" rows="3" maxlength="500" placeholder="e.g. 4 days, ₹15,000 per person, 3-star hotels" enterkeyhint="done"></textarea><small class="err" id="eMsgErr"></small></label>
+        <div class="hp" aria-hidden="true"><label>Website<input id="eWebsite" type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-dark h-[58px] rounded-[14px] text-[16px] sm:col-span-2" id="eSend" type="submit">
+          <svg class="!h-[22px] !w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          Send enquiry on WhatsApp</button>
+        <p class="m-0 text-center text-[14px] leading-normal text-muted sm:col-span-2">Opens WhatsApp with your details filled in — just tap <b>Send</b>.</p>
+        <div class="done" id="done" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-ink text-white">
+  <div class="wrap flex flex-col gap-14 pt-20 sm:pt-24" style="padding-bottom:calc(env(safe-area-inset-bottom) + 108px)">
+    <div class="flex flex-wrap justify-between gap-12">
+      <div class="flex max-w-[420px] flex-[1_1_320px] flex-col gap-4">
+        <img src="img/logo.png" alt="Maverick Expeditions" class="h-[72px] w-auto self-start" width="768" height="512" loading="lazy">
+        <p class="leading-relaxed text-muted-d">New packages and seasonal offers, once a month.</p>
+        <form class="flex flex-wrap gap-2" id="news" novalidate><label class="sr-only" for="nEmail">Email address</label><input id="nEmail" type="email" placeholder="you@email.com" maxlength="254" autocomplete="email" inputmode="email" class="h-[52px] min-w-0 flex-[1_1_200px] rounded-full border border-white/25 bg-white/5 px-5 font-medium text-white placeholder:text-white/50" required><button class="btn btn-accent" type="submit">Subscribe</button></form>
+        <p id="newsDone" role="status" class="text-[14px]"></p>
+      </div>
+      <div class="grid w-full grid-cols-2 gap-x-6 gap-y-10 sm:flex sm:w-auto sm:gap-16">
+        <nav class="flex flex-col gap-3" aria-label="Explore"><span class="text-[12px] font-bold uppercase tracking-[.16em] text-muted-f">Explore</span><a class="text-[15px] text-white/90 no-underline hover:underline" href="#destinations">Destinations</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Experiences</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#why">About</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#how">How it works</a></nav>
+        <nav class="flex flex-col gap-3" aria-label="Packages"><span class="text-[12px] font-bold uppercase tracking-[.16em] text-muted-f">Packages</span><a class="text-[15px] text-white/90 no-underline hover:underline" href="#destinations">Islands &amp; international</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Student tours</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Family &amp; honeymoon</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Pilgrimage circuits</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Industrial visits</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#tours">Corporate offsites</a></nav>
+        <nav class="flex flex-col gap-3" aria-label="Support"><span class="text-[12px] font-bold uppercase tracking-[.16em] text-muted-f">Support</span><a class="text-[15px] text-white/90 no-underline hover:underline" href="#policies" data-tab="faq">FAQs</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#policies" data-tab="terms">Cancellation &amp; payments</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#policies" data-tab="privacy">Privacy policy</a><a class="text-[15px] text-white/90 no-underline hover:underline" href="#plan">Contact us</a></nav>
+      </div>
+    </div>
+    <p class="m-0 font-display text-[clamp(52px,11.5vw,180px)] font-extrabold leading-[.84] tracking-[-.05em] text-ink-3" aria-hidden="true">Forge your own path</p>
+    <div class="flex flex-wrap justify-between gap-3 border-t border-white/15 pt-6 text-[14px] text-muted-f"><span>© 2026 Maverick Expeditions · Arulpuram, Tiruppur</span><span>Travel agency in Tiruppur for South India tours</span></div>
+  </div>
+</footer>
+
+<!-- Mobile quick actions (iOS-style floating bar) -->
+<div class="actionbar" id="actionbar" aria-label="Quick actions">
+  <a href="tel:+918110849375" class="press flex h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-white/10 text-[14px] font-bold text-white no-underline" aria-label="Call Maverick Expeditions">
+    <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="https://wa.me/918110849375" target="_blank" rel="noopener noreferrer" class="press flex h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-wa text-[14px] font-bold text-white no-underline">
+    <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+  <a href="#plan" class="press flex h-12 flex-[1.25] items-center justify-center rounded-2xl bg-accent text-[14px] font-bold text-ink no-underline">Plan my trip</a>
+</div>
+
+<script src="js/lenis.min.js"></script>
+<script src="js/smooth.js"></script>
+<script type="module" src="js/ui.js"></script>
+<script type="module" src="js/hero.js"></script>
+</body>
+</html>
